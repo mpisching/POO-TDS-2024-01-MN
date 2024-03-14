@@ -27,6 +27,13 @@ public class Produto {
     public int obterQuantidadeAtual() {
         return this.qtdAtual;    
     }
+    
+    public void reajustarValor(float idx) {
+        if (idx > 0.0)
+            valor += valor * idx / 100;
+        else 
+            valor -= valor * Math.abs(idx) / 100;
+    }
 
     @Override
     public String toString() {
