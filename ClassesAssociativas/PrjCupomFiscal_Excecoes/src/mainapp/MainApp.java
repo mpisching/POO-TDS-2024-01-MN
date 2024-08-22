@@ -51,7 +51,7 @@ public class MainApp {
         //alterando o preco de um produto...
         try {
             System.out.println("bloqueando recursos!");
-            DataSource.getProduto(2).setPreco(25.0);
+            DataSource.getProduto(2).setPreco(-25.0);
             System.out.println("Novo preco do produto " + DataSource.getProduto(2).getNome() + 
                 " R$ " + DataSource.getProduto(2).getPreco());
         } catch (ProdutoException ex) {
